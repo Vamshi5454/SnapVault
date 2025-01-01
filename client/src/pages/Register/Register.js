@@ -1,13 +1,23 @@
 import { useState } from "react";
-
+// import {useNavigate}
+import { useNavigate } from "react-router-dom";
+import "./Register.css";
 function Register() {
+  // const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
 
   const handleSubmit = () => {};
+
+  const handleLogin = () => {
+    // navigate('')
+  };
   return (
-    <div>
+    <div className="register-container">
+      <button className="login-button" onClick={handleLogin}>
+        Login
+      </button>
       <form onSubmit={handleSubmit}>
         <label>Name</label>
         <input
