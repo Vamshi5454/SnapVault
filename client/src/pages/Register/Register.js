@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Register.css";
 function Register() {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
@@ -11,7 +11,7 @@ function Register() {
   const handleSubmit = () => {};
 
   const handleLogin = () => {
-    // navigate('')
+    navigate("/login");
   };
   return (
     <div className="register-container">
